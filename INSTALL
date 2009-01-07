@@ -1,0 +1,5 @@
+You'll need to create a ~/.vimrc file for vim to find.  I suggest a symlink:
+
+  $ cd
+  $ ln -s .vim/vimrc.vim .vimrc
+
