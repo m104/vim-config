@@ -1,5 +1,6 @@
 autocmd!
 set nocompatible
+"set selectmode=mouse
 set encoding=utf-8
 
 filetype plugin on
@@ -47,7 +48,6 @@ set guioptions-=T
 " (Character 187 is a right double-chevron, and 183 a mid-dot.)
 "execute 'set listchars+=tab:' . nr2char(187) . nr2char(183)
 set listchars=tab:>.,trail:-
-
 set list
 
 " keep 3 lines and characters of context
@@ -64,9 +64,6 @@ set nowrap
 
 " if we do wrap, show them explicitly
 set showbreak=`
-
-" automatically insert linefeeds
-"set linebreak
 
 " use indents of 2 spaces, and have them copied down lines:
 set tabstop=2
@@ -112,10 +109,8 @@ set foldlevel=20
 
 set backspace=indent,eol,start
 
-
 " justify text
 nmap <C-Q> vipgq
-nmap <C-J> vipgq
 
 " use <F6> to cycle through split windows (and <Shift>+<F6> to cycle backwards,
 " where possible):
@@ -133,20 +128,13 @@ nnoremap <C-N> :bnext<CR>
 " GUI font and color selection
 if has("gui_running")
   if has("gui_gtk2")
-    "set guifont=Terminal\ 10
     set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 10
   elseif has("x11")
     set guifont=-*-courier-medium-r-normal-*-*-180-*-*-m-*-*
-  else
-    "set guifont=Courier_New:h11:cDEFAULT
-    "set gfn=Monaco:h14:a
-    set nomacatsui anti enc=utf-8 gfn=Monaco:h13
   endif
 
   colorscheme glow
-
   win 80 40
-
   set nu
 
 else
@@ -154,3 +142,10 @@ else
   set background=dark
 endif
 
+
+" host-specific configuration loading
+let $HOSTCONFIGFILE=$HOME . '/.vim/host/' . hostname() . '.vim'
+
+if filereadable($HOSTCONFIGFILE)
+  source $HOSTCONFIGFILE
+endif
