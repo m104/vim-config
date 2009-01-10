@@ -119,8 +119,10 @@ nnoremap <S-F6> <C-W>W
 
 " use <Ctrl>+N to cycle through files:
 nnoremap <C-N> :bnext<CR>
-" [<Ctrl>+N by default is like j, and <Ctrl>+P like k.]
+" use <Ctrl>+P to reverse-cycle through files:
+nnoremap <C-P> :bprev<CR>
 
+" unused printing keys
 "nnoremap <C-P> :w!<CR>:!expand -t 4 % \| lpr -p -o sides=one-sided<CR>
 "nnoremap <C-P> :w!<CR>:a2ps -d -s 1 -R -C -T 4 -M Letter -g %<CR>
 
