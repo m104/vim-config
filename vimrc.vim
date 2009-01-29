@@ -130,7 +130,6 @@ nnoremap <C-P> :prev<CR>
 :inoremap ( ()<Esc>:let leavechar=")"<CR>i
 :inoremap [ []<Esc>:let leavechar="]"<CR>i
 :inoremap { {}<Esc>:let leavechar="}"<CR>i
-:inoremap < <><Esc>:let leavechar=">"<CR>i
 :inoremap ` ``<Esc>:let leavechar="`"<CR>i
 :inoremap ' ''<Esc>:let leavechar="'"<CR>i
 :inoremap " ""<Esc>:let leavechar='"'<CR>i
