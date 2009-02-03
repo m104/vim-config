@@ -126,15 +126,6 @@ nnoremap <C-P> :prev<CR>
 "nnoremap <C-P> :w!<CR>:!expand -t 4 % \| lpr -p -o sides=one-sided<CR>
 "nnoremap <C-P> :w!<CR>:a2ps -d -s 1 -R -C -T 4 -M Letter -g %<CR>
 
-" structured completions
-:inoremap ( ()<Esc>:let leavechar=")"<CR>i
-:inoremap [ []<Esc>:let leavechar="]"<CR>i
-:inoremap { {}<Esc>:let leavechar="}"<CR>i
-:inoremap ` ``<Esc>:let leavechar="`"<CR>i
-:inoremap ' ''<Esc>:let leavechar="'"<CR>i
-:inoremap " ""<Esc>:let leavechar='"'<CR>i
-:imap <C-e> <Esc>:exec "normal f" . leavechar<CR>a
-
 
 
 " GUI font and color selection
