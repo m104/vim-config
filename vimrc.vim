@@ -1,4 +1,4 @@
-autocmd!
+"autocmd!
 set nocompatible
 "set selectmode=mouse
 set encoding=utf-8
