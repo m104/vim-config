@@ -20,6 +20,9 @@ set vb
 " have syntax highlighting in terminals which can display colours:
 syntax on
 
+" accurate, but slow, syntax parsing
+syn sync fromstart
+
 " have fifty lines of command-line (etc) history:
 set history=100
 " remember all of these between sessions, but only 10 search terms; also
@@ -144,6 +147,7 @@ else
   " set color scheme for light terminals
   set background=dark
 endif
+
 
 
 " host-specific configuration loading
