@@ -21,7 +21,7 @@ set vb
 syntax on
 
 " accurate, but slow, syntax parsing
-syn sync fromstart
+"syn sync fromstart
 
 " have fifty lines of command-line (etc) history:
 set history=100
