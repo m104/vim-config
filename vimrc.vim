@@ -129,26 +129,7 @@ nnoremap <C-P> :prev<CR>
 "nnoremap <C-P> :w!<CR>:!expand -t 4 % \| lpr -p -o sides=one-sided<CR>
 "nnoremap <C-P> :w!<CR>:a2ps -d -s 1 -R -C -T 4 -M Letter -g %<CR>
 
-
-
-" GUI font and color selection
-if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 10
-  elseif has("x11")
-    set guifont=-*-courier-medium-r-normal-*-*-180-*-*-m-*-*
-  endif
-
-  colorscheme glow
-  win 80 40
-  set nu
-
-else
-  " set color scheme for light terminals
-  set background=dark
-endif
-
-
+colorscheme glow
 
 " host-specific configuration loading
 let $HOSTCONFIGFILE=$HOME . '/.vim/host/' . hostname() . '.vim'

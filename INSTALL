@@ -1,5 +1,6 @@
-You'll need to create a ~/.vimrc file for vim to find.  I suggest a symlink:
+You'll need to create a ~/.vimrc (and possibly ~/.gvimrc) file for vim
+to find.  I suggest a symlink:
 
-  $ cd
-  $ ln -s .vim/vimrc.vim .vimrc
+  $ ln -s ~/.vim/vimrc.vim ~/.vimrc
+  $ ln -s ~/.vim/gvimrc.vim ~/.gvimrc
 
