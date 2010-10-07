@@ -75,6 +75,8 @@ set shiftround
 set expandtab
 set autoindent
 
+autocmd Filetype php setlocal tabstop=4 shiftwidth=4
+
 " normally don't automatically format `text' as it is typed, IE only do this
 " with comments, at 76 characters:
 set formatoptions=croq
