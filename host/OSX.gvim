@@ -1,2 +1,6 @@
 set gfn=Monaco:h12
 "set transp=8
+
+set background=dark
+let g:solarized_style="dark"
+colorscheme solarized
