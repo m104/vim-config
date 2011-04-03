@@ -13,7 +13,6 @@ set hidden
 " cursor position
 set ruler
 
-
 " no beeping, please...
 set vb
 
@@ -37,12 +36,20 @@ set viminfo=/10,'10,r/Volumes,f0,h,\"100
 " have further <Tab>s cycle through the possibilities:
 set wildmode=list:longest,full
 
-" use "[RO]" for "[readonly]" to save space in the message line:
-set shortmess+=r
+" status line should always be shown
+set laststatus=2
 
 " display the current mode and partially-typed commands in the status line:
 set showmode
 set showcmd
+
+" default status line
+"set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+" informative status line
+set statusline=%<%f\ %h%w%m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline():''}%=%-16(\ %l,%c%V\ %)%P
+
+" use "[RO]" for "[readonly]" to save space in the message line:
+set shortmess+=r
 
 " turn off the toolbar in gvim
 set guioptions-=T
