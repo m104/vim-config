@@ -14,5 +14,6 @@ Added plugins:
   + rails
 
  SCM
-  - fugitive
+  + fugitive
+  + scmdiff
 
