@@ -3,7 +3,7 @@ Current vim/gvim configuration including Glow and Solarized color schemes.
 Added plugins:
 
  General
-  - surround
+  + surround
   + repeat
   - snipmate
   - NERD_tree
