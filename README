@@ -9,11 +9,13 @@ Added plugins:
   - NERD_tree
   - A
   - ragtag
+  - taglist
 
  Ruby/Rails
   + rails
 
  SCM
+  + git
   + fugitive
   + scmdiff
 
