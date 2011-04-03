@@ -1,3 +1,18 @@
-Current vim/gvim configuration includes basic support for Ruby, along
-with my favorite color scheme (glow).
+Current vim/gvim configuration including Glow and Solarized color schemes.
+
+Added plugins:
+
+ General
+  - surround
+  - repeat
+  - snipmate
+  - NERD_tree
+  - A
+  - ragtag
+
+ Ruby/Rails
+  + rails
+
+ SCM
+  - fugitive
 
