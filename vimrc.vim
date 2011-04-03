@@ -36,9 +36,6 @@ set viminfo=/10,'10,r/Volumes,f0,h,\"100
 " have further <Tab>s cycle through the possibilities:
 set wildmode=list:longest,full
 
-" status line should always be shown
-set laststatus=2
-
 " display the current mode and partially-typed commands in the status line:
 set showmode
 set showcmd
