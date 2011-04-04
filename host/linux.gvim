@@ -1,0 +1,11 @@
+if has("gui_gtk2")
+  set guifont=DejaVu\ Sans\ Mono\ 10
+elseif has("x11")
+  set guifont=-*-courier-medium-r-normal-*-*-180-*-*-m-*-*
+endif
+
+win 85 44
+set nu
+
+set background=dark
+colorscheme molokai

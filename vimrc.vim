@@ -93,9 +93,6 @@ filetype on
 set ignorecase
 set smartcase
 
-" Spell Checking!
-"set spell
-
 " show the `best match so far' as search strings are typed:
 set incsearch
 " highlight search strings
@@ -134,9 +131,6 @@ nnoremap <C-P> :prev<CR>
 " unused printing keys
 "nnoremap <C-P> :w!<CR>:!expand -t 4 % \| lpr -p -o sides=one-sided<CR>
 "nnoremap <C-P> :w!<CR>:a2ps -d -s 1 -R -C -T 4 -M Letter -g %<CR>
-
-" default colorscheme
-colorscheme glow
 
 " host-specific configuration loading
 let $HOSTCONFIGFILE=$HOME . '/.vim/host/' . hostname() . '.vim'
