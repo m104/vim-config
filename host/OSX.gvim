@@ -1,8 +1,13 @@
 set gfn=Monaco:h12
 "set transp=8
 
-win 110 40
+win 110 44
 
+" 'glow' colorscheme
 set background=dark
-let g:solarized_style="dark"
-colorscheme solarized
+colorscheme glow
+
+" 'solarized' colorscheme
+"set background=dark
+"#let g:solarized_style="dark"
+"colorscheme solarized
