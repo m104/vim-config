@@ -4,10 +4,11 @@ set gfn=Monaco:h12
 win 110 44
 
 " 'glow' colorscheme
-set background=dark
-colorscheme glow
+"set background=dark
+"colorscheme glow
 
 " 'solarized' colorscheme
-"set background=dark
-"#let g:solarized_style="dark"
-"colorscheme solarized
+set background=dark
+let g:solarized_style="dark"
+let g:solarized_contrast="high"
+colorscheme solarized
