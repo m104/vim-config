@@ -48,9 +48,6 @@ set statusline=%<%f\ %h%w%m%r%y%{exists('g:loaded_fugitive')?fugitive#statusline
 " use "[RO]" for "[readonly]" to save space in the message line
 set shortmess+=r
 
-" turn off the toolbar in gvim
-set guioptions-=T
-
 " when using list, keep tabs at their full width and display `arrows'
 " (Character 187 is a right double-chevron, and 183 a mid-dot.)
 "execute 'set listchars+=tab:' . nr2char(187) . nr2char(183)
@@ -79,7 +76,9 @@ set shiftround
 set expandtab
 set autoindent
 
+" indents of 4 spaces for some filetypes
 autocmd Filetype php setlocal tabstop=4 shiftwidth=4
+autocmd Filetype c setlocal tabstop=4 shiftwidth=4
 
 " normally don't automatically format `text' as it is typed, IE only do this
 " with comments, at 76 characters
@@ -110,7 +109,7 @@ set whichwrap=h,l,~,[,]
 
 " turn on programmaticly syntactical folds
 set foldmethod=indent
-" set the fold level high enough to not fold the whole program 
+" set the fold level high enough to not fold the whole program
 set foldlevel=20
 
 set backspace=indent,eol,start
@@ -124,7 +123,7 @@ nnoremap <C-P> :bp<CR>
 " quick buffer list
 nnoremap <C-A> :buffers<CR>:buffer<Space>
 
-" unused printing keys
+" example printing keys
 "nnoremap <C-P> :w!<CR>:!expand -t 4 % \| lpr -p -o sides=one-sided<CR>
 "nnoremap <C-P> :w!<CR>:a2ps -d -s 1 -R -C -T 4 -M Letter -g %<CR>
 
