@@ -37,10 +37,6 @@ hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi Debug           guifg=#BCA3A3               gui=bold
 hi Define          guifg=#66D9EF               gui=bold
 hi Delimiter       guifg=#8F8F8F
-hi DiffAdd                       guibg=#13354A
-hi DiffChange      guifg=#89807D guibg=#4C4745
-hi DiffDelete      guifg=#960050 guibg=#1E0010
-hi DiffText                      guibg=#4C4745 gui=italic,bold
 
 hi Directory       guifg=#A6E22E               gui=bold
 hi Error           guifg=#960050 guibg=#1E0010
@@ -105,6 +101,17 @@ hi VisualNOS                     guibg=#403D3D
 hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu        guifg=#66D9EF guibg=#000000
+
+" *vimdiff
+hi DiffChange                    guibg=#333435
+hi DiffText                      guibg=#4C4745 gui=bold
+hi DiffAdd                       guibg=#13354A
+hi DiffDelete      guifg=#960050 guibg=#1E0010
+
+" ftypes
+hi diffAdded                     guibg=#13354A
+hi diffChanged     guifg=#89807D guibg=#4C4745
+hi diffRemoved     guifg=#960050 guibg=#1E0010
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822

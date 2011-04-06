@@ -30,11 +30,16 @@ hi StatusLineNC gui=NONE guifg=#666666 guibg=#171717
 hi VertSplit    gui=NONE guifg=#707070 guibg=#606060
 hi WildMenu     gui=NONE guifg=#000000 guibg=#ff80c0
 
-" Diff
+" Diff (*vimdiff)
 hi DiffText     gui=NONE guifg=#ff78f0 guibg=#a02860
 hi DiffChange   gui=NONE guifg=#e03870 guibg=#601830
 hi DiffDelete   gui=NONE guifg=#a0d0ff guibg=#0020a0
 hi DiffAdd      gui=NONE guifg=#a0d0ff guibg=#0020a0
+
+" diff ftype
+hi diffChanged  gui=NONE guifg=#ff78f0 guibg=#a02860
+hi diffRemoved  gui=NONE guifg=#e03870 guibg=#601830
+hi diffAdded    gui=NONE guifg=#a0d0ff guibg=#0020a0
 
 " Cursor
 hi Cursor       gui=NONE guifg=#70ffc0 guibg=#8040ff
