@@ -1,4 +1,4 @@
-set gfn=Monaco:h12
+set gfn=Menlo:h12
 
 win 110 44
 set nu
