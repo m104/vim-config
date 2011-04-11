@@ -81,9 +81,9 @@ autocmd Filetype php setlocal tabstop=4 shiftwidth=4
 autocmd Filetype c setlocal tabstop=4 shiftwidth=4
 
 " normally don't automatically format `text' as it is typed, IE only do this
-" with comments, at 76 characters
+" with comments, at 80 characters
 set formatoptions=croq
-set textwidth=72
+set textwidth=80
 
 " enable filetype detection
 filetype on
