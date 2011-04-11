@@ -1,6 +1,6 @@
 set gfn=Menlo:h13
 
-win 110 44
+win 120 44
 set nu
 
 set background=dark
