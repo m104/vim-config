@@ -123,6 +123,9 @@ nnoremap <C-P> :bp<CR>
 " quick buffer list
 nnoremap <C-A> :buffers<CR>:buffer<Space>
 
+" quick NERDTree toggling
+map <silent> <Leader>n :NERDTreeToggle<CR>
+
 " example printing keys
 "nnoremap <C-P> :w!<CR>:!expand -t 4 % \| lpr -p -o sides=one-sided<CR>
 "nnoremap <C-P> :w!<CR>:a2ps -d -s 1 -R -C -T 4 -M Letter -g %<CR>
