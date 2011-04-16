@@ -79,6 +79,7 @@ set autoindent
 " indents of 4 spaces for some filetypes
 autocmd Filetype php setlocal tabstop=4 shiftwidth=4
 autocmd Filetype c setlocal tabstop=4 shiftwidth=4
+autocmd Filetype cpp setlocal tabstop=4 shiftwidth=4
 
 " normally don't automatically format `text' as it is typed, IE only do this
 " with comments, at 80 characters
