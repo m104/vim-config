@@ -3,8 +3,14 @@
 " Author: Tomas Restrepo <tomas@winterdom.com>
 "
 " Note: Based on the monokai theme for textmate
-" by Wimer Hazenberg and its darker variant 
+" by Wimer Hazenberg and its darker variant
 " by Hamish Stuart Macpherson
+"
+" Modified by Adam W Collins <adam@m104.us> as such:
+"   * Lightened the Comments color for better contrast
+"   * removed the duplicate `hi SpecialKey` entries
+"   * removed molokai_original color option
+"   * revved scheme name to "molokai_m104"
 "
 
 hi clear
@@ -18,14 +24,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="molokai"
-
-if exists("g:molokai_original")
-    let s:molokai_original = g:molokai_original
-else
-    let s:molokai_original = 0
-endif
-
+let g:colors_name="molokai_m104"
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
@@ -76,7 +75,7 @@ hi SignColumn      guifg=#A6E22E guibg=#232526
 hi SpecialChar     guifg=#F92672               gui=bold
 hi SpecialComment  guifg=#465457               gui=bold
 hi Special         guifg=#FD971F guibg=bg
-hi SpecialKey      guifg=#888A85               gui=italic
+
 if has("spell")
     hi SpellBad    guisp=#FF0000 gui=undercurl
     hi SpellCap    guisp=#7070F0 gui=undercurl
@@ -113,21 +112,12 @@ hi diffAdded                     guibg=#13354A
 hi diffChanged     guifg=#89807D guibg=#4C4745
 hi diffRemoved     guifg=#960050 guibg=#1E0010
 
-if s:molokai_original == 1
-   hi Normal          guifg=#F8F8F2 guibg=#272822
-   hi Comment         guifg=#75715E
-   hi CursorLine                    guibg=#3E3D32
-   hi CursorColumn                  guibg=#3E3D32
-   hi LineNr          guifg=#BCBCBC guibg=#3B3A32
-   hi NonText         guifg=#BCBCBC guibg=#3B3A32
-else
-   hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
-   hi Comment         guifg=#465457
-   hi CursorLine                    guibg=#293739
-   hi CursorColumn                  guibg=#293739
-   hi LineNr          guifg=#BCBCBC guibg=#232526
-   hi NonText         guifg=#BCBCBC guibg=#232526
-end
+hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
+hi Comment         guifg=#808080
+hi CursorLine                    guibg=#293739
+hi CursorColumn                  guibg=#293739
+hi LineNr          guifg=#BCBCBC guibg=#232526
+hi NonText         guifg=#BCBCBC guibg=#232526
 
 "
 " Support for 256-color terminal
@@ -188,7 +178,6 @@ if &t_Co > 255
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81  ctermbg=232
-   hi SpecialKey      ctermfg=245
 
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253

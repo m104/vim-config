@@ -8,4 +8,4 @@ win 85 44
 set nu
 
 set background=dark
-colorscheme molokai
+colorscheme molokai_m104
