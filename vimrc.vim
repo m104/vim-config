@@ -78,6 +78,7 @@ set autoindent
 
 " indents of 4 spaces for some filetypes
 autocmd Filetype php setlocal tabstop=4 shiftwidth=4
+autocmd Filetype objc setlocal tabstop=4 shiftwidth=4
 autocmd Filetype c setlocal tabstop=4 shiftwidth=4
 autocmd Filetype cpp setlocal tabstop=4 shiftwidth=4
 
