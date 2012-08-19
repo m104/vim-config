@@ -52,7 +52,7 @@ hi IncSearch       guifg=#C4BE89 guibg=#000000
 hi Keyword         guifg=#F92672               gui=bold
 hi Label           guifg=#E6DB74               gui=none
 hi Macro           guifg=#C4BE89               gui=italic
-hi SpecialKey      guifg=#000000
+hi SpecialKey      guifg=#808080 guibg=#000000
 
 hi MatchParen      guifg=#000000 guibg=#FD971F gui=bold
 hi ModeMsg         guifg=#E6DB74
