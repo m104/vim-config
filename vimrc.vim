@@ -1,13 +1,38 @@
+" modernize vim
+set nocompatible
+" ensure utf-8 encoding
+set encoding=utf-8
+
+
+" * Vundle
+
+" load Vundle
+filetype off
+let $VUNDLEDIR=$HOME . '/.vim/bundle/vundle'
+set rtp+=$VUNDLEDIR
+call vundle#rc()
+
+" vim plugin
+Bundle 'The-NERD-tree'
+
+" file type support
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-markdown'
+
+" text editing
+Bundle 'tpope/vim-surround'
+
+" SCM/project/support
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-fugitive'
+Bundle 'taglist.vim'
+
+
 " * General Vim Settings
 
-" modernize Vim
-set nocompatible
-set encoding=utf-8
-set selectmode=mouse
 " enable filetype detection
-filetype on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 " allow hidden buffers
 set hidden
 " lines of command-line (etc) history
@@ -24,6 +49,8 @@ set viminfo=/10,'10,r/Volumes,f0,h,\"100
 
 " dark background, by default
 set background=dark
+" mouse selection
+set selectmode=mouse
 " no beeping, please...
 set vb
 " display the current mode and partially-typed commands in the status line

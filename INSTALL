@@ -4,3 +4,7 @@ to find.  I suggest a symlink:
   $ ln -s ~/.vim/vimrc.vim ~/.vimrc
   $ ln -s ~/.vim/gvimrc.vim ~/.gvimrc
 
+Next, the Vundle bundles need to be installed (within vim):
+
+  :BundleInstall
+
