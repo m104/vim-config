@@ -5,3 +5,5 @@ set nu
 
 set background=dark
 colorscheme molokai_m104
+
+autocmd VimLeave * macaction terminate:
