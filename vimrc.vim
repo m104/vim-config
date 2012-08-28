@@ -28,6 +28,9 @@ Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'taglist.vim'
 
+" UI
+Bundle 'Lokaltog/vim-powerline'
+let g:Powerline_symbols = 'unicode'
 
 " * General Vim Settings
 
@@ -53,6 +56,8 @@ set background=dark
 set selectmode=mouse
 " no beeping, please...
 set vb
+" always show status line
+set laststatus=2
 " display the current mode and partially-typed commands in the status line
 set showmode
 set showcmd
