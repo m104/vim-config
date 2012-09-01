@@ -6,7 +6,7 @@
 " by Wimer Hazenberg and its darker variant
 " by Hamish Stuart Macpherson
 "
-" Modified by Adam W Collins <adam@m104.us> as such:
+" Modified by Adam Collins <adam@m104.us> as such:
 "   * Lightened the Comments color for better contrast
 "   * removed the duplicate `hi SpecialKey` entries
 "   * removed molokai_original color option
@@ -47,7 +47,7 @@ hi Folded          guifg=#465457 guibg=#000000
 hi Function        guifg=#A6E22E               gui=bold
 hi Identifier      guifg=#FD971F
 hi Ignore          guifg=#808080 guibg=bg
-hi IncSearch       guifg=#C4BE89 guibg=#000000
+hi IncSearch       guifg=#E3C65A guibg=#000000
 
 hi Keyword         guifg=#F92672               gui=bold
 hi Label           guifg=#E6DB74               gui=none
@@ -69,7 +69,8 @@ hi PreCondit       guifg=#A6E22E               gui=bold
 hi PreProc         guifg=#A6E22E               gui=bold
 hi Question        guifg=#66D9EF
 hi Repeat          guifg=#F92672               gui=bold
-hi Search          guifg=#FFFFFF guibg=#455354
+hi Search          guifg=#FFFFFF guibg=#2F50DD
+
 " marks column
 hi SignColumn      guifg=#A6E22E guibg=#232526
 hi SpecialChar     guifg=#F92672               gui=bold
@@ -82,6 +83,7 @@ if has("spell")
     hi SpellLocal  guisp=#70F0F0 gui=undercurl
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
+
 hi Statement       guifg=#F92672               gui=bold
 hi StatusLine      guifg=#455354 guibg=fg
 hi StatusLineNC    guifg=#808080 guibg=#080808
