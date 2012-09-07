@@ -136,7 +136,7 @@ set backspace=indent,eol,start
 nnoremap <C-N> :bn<CR>
 nnoremap <C-P> :bp<CR>
 " quick buffer list
-nnoremap <C-A> :buffers<CR>:buffer<Space>
+nnoremap <C-B> :buffers<CR>:buffer<Space>
 
 " quick plugin toggling
 map <silent> <Leader>n :NERDTreeToggle<CR>
