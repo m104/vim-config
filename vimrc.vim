@@ -98,7 +98,7 @@ set hlsearch
 " show matches
 set showmatch
 " set the initial search pattern
-let @/="TODO"
+let @/="\\<\\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\\)\\>"
 " display 'invisible' characters
 set listchars=tab:>.,trail:-
 set list
