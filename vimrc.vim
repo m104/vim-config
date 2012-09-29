@@ -97,8 +97,6 @@ set incsearch
 set hlsearch
 " show matches
 set showmatch
-" set the initial search pattern
-let @/="\\<\\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\\)\\>"
 " display 'invisible' characters
 set listchars=tab:>.,trail:-
 set list
@@ -142,6 +140,8 @@ nnoremap <C-B> :buffers<CR>:buffer<Space>
 map <silent> <Leader>n :NERDTreeToggle<CR>
 map <silent> <Leader>t :TlistToggle<CR>
 
+" search for points of interest
+map <silent> <Leader>i /\\<\\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\\)\\><CR>
 
 " * Load Additional Settings
 
