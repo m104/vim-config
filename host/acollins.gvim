@@ -1,0 +1,10 @@
+set gfn=Menlo:h12
+
+win 130 70
+set nu
+
+set background=dark
+colorscheme molokai_m104
+
+" enable to auto-terminate MacVim
+"autocmd VimLeave * macaction terminate:
