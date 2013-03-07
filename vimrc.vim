@@ -14,6 +14,7 @@ call vundle#rc()
 
 " vim plugin
 Bundle 'The-NERD-tree'
+Bundle 'ctrlp.vim'
 
 " file type support
 Bundle 'vim-ruby/vim-ruby'
@@ -132,7 +133,7 @@ set backspace=indent,eol,start
 
 " cycle through buffers/files
 nnoremap <C-N> :bn<CR>
-nnoremap <C-P> :bp<CR>
+nnoremap <C-S-N> :bp<CR>
 " quick buffer list
 nnoremap <C-B> :buffers<CR>:buffer<Space>
 
