@@ -20,6 +20,8 @@ Bundle 'ctrlp.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-haml'
+Bundle 'vim-coffee-script'
 
 " text editing
 Bundle 'tpope/vim-surround'
