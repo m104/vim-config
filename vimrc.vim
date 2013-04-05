@@ -135,12 +135,13 @@ set backspace=indent,eol,start
 
 " cycle through buffers/files
 nnoremap <C-N> :bn<CR>
-nnoremap <C-S-N> :bp<CR>
-" quick buffer list
+nnoremap <C-M> :bp<CR>
+" quick buffer list and select
 nnoremap <C-B> :buffers<CR>:buffer<Space>
 
 " quick plugin toggling
 map <silent> <Leader>n :NERDTreeToggle<CR>
+map <silent> <Leader>f :NERDTreeFind<CR>
 map <silent> <Leader>t :TlistToggle<CR>
 
 " search for points of interest
