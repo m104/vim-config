@@ -147,6 +147,9 @@ map <silent> <Leader>t :TlistToggle<CR>
 " search for points of interest
 map <silent> <Leader>i /\\<\\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\\)\\><CR>
 
+" search for git merge conflicts
+map <silent> <Leader>m /^[<=>]\{7\}<CR>
+
 " * Load Additional Settings
 
 " host-specific configuration loading
