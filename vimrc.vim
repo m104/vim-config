@@ -8,8 +8,7 @@ set encoding=utf-8
 
 " load Vundle
 filetype off
-let $VUNDLEDIR=$HOME . '/.vim/bundle/vundle'
-set rtp+=$VUNDLEDIR
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " vim plugin
@@ -37,6 +36,7 @@ Bundle 'slimv.vim'
 " UI
 Bundle 'Lokaltog/vim-powerline'
 let g:Powerline_symbols = 'unicode'
+
 
 " * General Vim Settings
 
@@ -155,10 +155,16 @@ map <silent> <Leader>m /^[<=>]\{7\}<CR>
 
 " * Load Additional Settings
 
-" host-specific configuration loading
-let $HOSTCONFIGFILE=$HOME . '/.vim/host/' . hostname() . '.vim'
+" OS-specific configuration loading
+let s:os=substitute(system('uname -s'), '\n', '', 'g')
+let s:osfile=$HOME . '/.vim/local/os-' . s:os . '.vim'
+if filereadable(s:osfile)
+  execute 'source '. s:osfile
+endif
 
-if filereadable($HOSTCONFIGFILE)
-  source $HOSTCONFIGFILE
+" host-specific configuration loading
+let s:hostfile=$HOME . '/.vim/local/host-' . hostname() . '.vim'
+if filereadable(s:hostfile)
+  execute 'source '. s:hostfile
 endif
 
