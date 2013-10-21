@@ -137,10 +137,10 @@ set backspace=indent,eol,start
 " * Key Mappings
 
 " cycle through buffers/files
-nnoremap <C-N> :bn<CR>
-nnoremap <C-M> :bp<CR>
+nnoremap <silent> <C-N> :bn<CR>
+nnoremap <silent> <C-B> :bp<CR>
 " quick buffer list and select
-nnoremap <C-B> :buffers<CR>:buffer<Space>
+nnoremap <Leader>b :buffers<CR>:buffer<Space>
 
 " quick plugin toggling
 map <silent> <Leader>n :NERDTreeToggle<CR>
