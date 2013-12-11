@@ -1,14 +1,17 @@
 " Vim syntax file
 " Language: TODO files
 " Maintainer: Adam Collins
-" Latest Revision: 18 October 2011
+" Latest Revision: December 11 2013
 
 if exists("b:current_syntax")
   finish
 endif
 
-syn region todoPendingItem start='^ \+-' end='$'
-syn region todoFinishedItem start='^ \++' end='$'
+syn match todoTag          "\[[^ ]\+\]"
+syn match todoPendingItem  "^ *-.*$" contains=todoTag
+syn match todoFinishedItem "^ *+.*$" contains=todoTag
 
+hi def link todoTag Constant
 hi def link todoPendingItem Todo
 hi def link todoFinishedItem Comment
+
