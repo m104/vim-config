@@ -7,12 +7,20 @@ Now with Vundle!
 ### Vim Stuff
 
   + nerdtree
+  + vim-powerline
 
-### File Type Support
+### Ruby on Rails Support
 
   + vim-ruby
   + vim-rails
   + vim-markdown
+  + vim-haml
+  + vim-coffee-script
+
+## Lisp, Julia Support
+
+  + julia-vim
+  + slimv
 
 ### Text Editing Helpers
 
