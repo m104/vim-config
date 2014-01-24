@@ -21,6 +21,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-haml'
 Bundle 'vim-coffee-script'
+Bundle 'JuliaLang/julia-vim'
 
 " text editing
 Bundle 'tpope/vim-surround'
