@@ -9,7 +9,7 @@ Now with Vundle!
   + nerdtree
   + vim-powerline
 
-### Ruby on Rails Support
+### Web Development Support
 
   + vim-ruby
   + vim-rails
@@ -17,9 +17,12 @@ Now with Vundle!
   + vim-haml
   + vim-coffee-script
 
-## Lisp, Julia Support
+### Julia Support
 
   + julia-vim
+
+### Lisp Support
+
   + slimv
 
 ### Text Editing Helpers
