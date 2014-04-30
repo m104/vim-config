@@ -17,6 +17,10 @@ Now with Vundle!
   + vim-haml
   + vim-coffee-script
 
+### Go Support
+
+  + vim-go
+
 ### Julia Support
 
   + julia-vim
