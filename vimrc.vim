@@ -21,7 +21,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-haml'
 Bundle 'vim-coffee-script'
-Bundle 'JuliaLang/julia-vim'
+"Bundle 'JuliaLang/julia-vim'
 Bundle 'fatih/vim-go'
 
 " text editing
@@ -150,7 +150,7 @@ map <silent> <Leader>f :NERDTreeFind<CR>
 map <silent> <Leader>t :TlistToggle<CR>
 
 " search for points of interest
-map <silent> <Leader>i /\\<\\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\\)\\><CR>
+map <silent> <Leader>i /\<\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\)\><CR>
 
 " search for git merge conflicts
 map <silent> <Leader>m /^[<=>]\{7\}<CR>
