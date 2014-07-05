@@ -33,6 +33,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'taglist.vim'
 
 " Lisp
+Bundle 'nickg/swank-chicken'
 Bundle 'slimv.vim'
 
 " UI
