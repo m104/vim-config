@@ -8,7 +8,7 @@ setl complete+=,k~/.scheme-word-list
 
 setl include=\^\(\\(use\\\|require-extension\\)\\s\\+
 setl includeexpr=substitute(v:fname,'$','.scm','')
-setl path+=/usr/local/opt/chicken/lib/chicken/6
+setl path+=/usr/local/opt/chicken/lib/chicken/7
 setl suffixesadd=.scm
 
 nmap <silent> == :call Scheme_indent_top_sexp()<cr>
