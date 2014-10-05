@@ -35,6 +35,7 @@ Bundle 'taglist.vim'
 " Lisp
 Bundle 'nickg/swank-chicken'
 Bundle 'slimv.vim'
+Bundle 'tpope/vim-fireplace'
 
 " UI
 Bundle 'Lokaltog/vim-powerline'
