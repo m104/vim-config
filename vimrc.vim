@@ -23,6 +23,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'vim-coffee-script'
 "Bundle 'JuliaLang/julia-vim'
 Bundle 'fatih/vim-go'
+Bundle 'toyamarinyon/vim-swift'
 
 " text editing
 Bundle 'tpope/vim-surround'
