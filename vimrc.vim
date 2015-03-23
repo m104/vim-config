@@ -3,7 +3,6 @@ set nocompatible
 " ensure utf-8 encoding
 set encoding=utf-8
 
-
 " * Vundle
 
 " load Vundle
@@ -15,15 +14,26 @@ call vundle#rc()
 Bundle 'The-NERD-tree'
 Bundle 'ctrlp.vim'
 
-" file type support
+" Rails/web
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-haml'
 Bundle 'vim-coffee-script'
-"Bundle 'JuliaLang/julia-vim'
+
+" Julia
+Bundle 'JuliaLang/julia-vim'
+
+" Go-lang
 Bundle 'fatih/vim-go'
+
+" Swift
 Bundle 'toyamarinyon/vim-swift'
+
+" Lisp
+Bundle 'nickg/swank-chicken'
+Bundle 'slimv.vim'
+Bundle 'tpope/vim-fireplace'
 
 " text editing
 Bundle 'tpope/vim-surround'
@@ -32,11 +42,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'taglist.vim'
-
-" Lisp
-Bundle 'nickg/swank-chicken'
-Bundle 'slimv.vim'
-Bundle 'tpope/vim-fireplace'
 
 " UI
 Bundle 'Lokaltog/vim-powerline'
