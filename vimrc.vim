@@ -13,6 +13,7 @@ call vundle#rc()
 " vim plugin
 Bundle 'The-NERD-tree'
 Bundle 'ctrlp.vim'
+Bundle 'majutsushi/tagbar'
 
 " Rails/web
 Bundle 'vim-ruby/vim-ruby'
@@ -26,6 +27,7 @@ Bundle 'JuliaLang/julia-vim'
 
 " Go-lang
 Bundle 'fatih/vim-go'
+Bundle 'dgryski/vim-godef'
 
 " Swift
 Bundle 'toyamarinyon/vim-swift'
@@ -155,7 +157,7 @@ nnoremap <Leader>b :buffers<CR>:buffer<Space>
 " quick plugin toggling
 map <silent> <Leader>n :NERDTreeToggle<CR>
 map <silent> <Leader>f :NERDTreeFind<CR>
-map <silent> <Leader>t :TlistToggle<CR>
+"map <silent> <Leader>t :TlistToggle<CR>
 
 " search for points of interest
 map <silent> <Leader>i /\<\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\)\><CR>
