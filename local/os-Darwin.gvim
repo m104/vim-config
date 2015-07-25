@@ -7,4 +7,4 @@ set background=dark
 colorscheme molokai_m104
 
 " enable to auto-terminate MacVim
-"autocmd VimLeave * macaction terminate:
+autocmd VimLeave * macaction terminate:
