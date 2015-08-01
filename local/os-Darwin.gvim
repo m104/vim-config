@@ -1,4 +1,4 @@
-set gfn=Menlo:h12
+set gfn=PT\ Mono:h13
 
 win 120 44
 set nu
