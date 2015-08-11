@@ -19,8 +19,8 @@ Bundle 'majutsushi/tagbar'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-haml'
-Bundle 'vim-coffee-script'
+"Bundle 'tpope/vim-haml'
+"Bundle 'vim-coffee-script'
 
 " Julia
 Bundle 'JuliaLang/julia-vim'
@@ -35,7 +35,7 @@ Bundle 'toyamarinyon/vim-swift'
 " Lisp
 Bundle 'nickg/swank-chicken'
 Bundle 'slimv.vim'
-Bundle 'tpope/vim-fireplace'
+"Bundle 'tpope/vim-fireplace'
 
 " text editing
 Bundle 'tpope/vim-surround'
