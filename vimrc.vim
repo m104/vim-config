@@ -43,11 +43,13 @@ Bundle 'tpope/vim-surround'
 " SCM/project/support
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
-Bundle 'taglist.vim'
+
+" utilities
+Bundle 'milkypostman/vim-togglelist'
 
 " UI
-Bundle 'Lokaltog/vim-powerline'
-let g:Powerline_symbols = 'unicode'
+Bundle 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled=1
 
 
 " * General Vim Settings
@@ -157,7 +159,7 @@ nnoremap <Leader>b :buffers<CR>:buffer<Space>
 " quick plugin toggling
 map <silent> <Leader>n :NERDTreeToggle<CR>
 map <silent> <Leader>f :NERDTreeFind<CR>
-"map <silent> <Leader>t :TlistToggle<CR>
+map <silent> <Leader>t :TagbarOpenAutoClose<CR>
 
 " search for points of interest
 map <silent> <Leader>i /\<\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\)\><CR>
