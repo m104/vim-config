@@ -16,4 +16,3 @@ let s:hostfile=$HOME . '/.vim/local/host-' . hostname() . '.gvim'
 if filereadable(s:hostfile)
   execute 'source '. s:hostfile
 endif
-

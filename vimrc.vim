@@ -19,8 +19,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-markdown'
-"Bundle 'tpope/vim-haml'
-"Bundle 'vim-coffee-script'
 
 " Julia
 Bundle 'JuliaLang/julia-vim'
@@ -49,7 +47,10 @@ Bundle 'milkypostman/vim-togglelist'
 
 " UI
 Bundle 'bling/vim-airline'
-let g:airline#extensions#tabline#enabled=1
+" load airline's tabline with gui support only
+if has("gui_running")
+  let g:airline#extensions#tabline#enabled=1
+endif
 
 
 " * General Vim Settings
@@ -181,4 +182,3 @@ let s:hostfile=$HOME . '/.vim/local/host-' . hostname() . '.vim'
 if filereadable(s:hostfile)
   execute 'source '. s:hostfile
 endif
-
