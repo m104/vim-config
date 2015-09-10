@@ -1,7 +1,10 @@
 " status line should always be shown
 set laststatus=2
 
-" turn off the toolbar in gvim
+" turn off scrollbars in gvim
+set guioptions-=r
+set guioptions-=L
+" turn off the toolbar
 set guioptions-=T
 
 " OS-specific configuration loading
