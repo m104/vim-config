@@ -7,27 +7,32 @@ Now with Vundle!
 ### Vim Stuff
 
   + nerdtree
-  + vim-powerline
-
-### Web Development Support
-
-  + vim-ruby
-  + vim-rails
-  + vim-markdown
-  + vim-haml
-  + vim-coffee-script
+  + ctrlp
+  + tagbar
+  + airline
 
 ### Go Support
 
   + vim-go
 
+### Ruby/Rails Support
+
+  + vim-ruby
+  + vim-rails
+  + vim-markdown
+
+### Lisp Support
+
+  + swank-chicken
+  + slimv
+
 ### Julia Support
 
   + julia-vim
 
-### Lisp Support
+### Swift Support
 
-  + slimv
+  + vim-swift
 
 ### Text Editing Helpers
 
@@ -37,14 +42,11 @@ Now with Vundle!
 
   + vim-fugitive
   + vim-git
-  + scmdiff (included plugin)
-  + taglist
 
 ### Color Schemes
 
   + molokai_m104 (current)
   + glow
-  + solarized
 
 
 ## Installation
@@ -65,8 +67,12 @@ Installation in four steps:
         cd ~/.vim
         git clone http://github.com/gmarik/vundle.git bundle/vundle
 
-4. Finally, install the Vundle bundles:
+4. Install the Vundle bundles:
 
         vim +BundleInstall +qall
+
+5. Optionally, install the go binaries:
+
+        vim +GoInstallBinaries +qall
 
 Enjoy!

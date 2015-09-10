@@ -25,7 +25,6 @@ Bundle 'JuliaLang/julia-vim'
 
 " Go-lang
 Bundle 'fatih/vim-go'
-Bundle 'dgryski/vim-godef'
 
 " Swift
 Bundle 'toyamarinyon/vim-swift'
@@ -154,8 +153,6 @@ set backspace=indent,eol,start
 " cycle through buffers/files
 nnoremap <silent> <C-N> :bn<CR>
 nnoremap <silent> <C-B> :bp<CR>
-" quick buffer list and select
-nnoremap <Leader>b :buffers<CR>:buffer<Space>
 
 " quick plugin toggling
 map <silent> <Leader>n :NERDTreeToggle<CR>
