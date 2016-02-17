@@ -4,4 +4,4 @@ win 120 44
 set nu
 
 set background=dark
-colorscheme molokai_m104
+colorscheme rendered_day
