@@ -15,24 +15,24 @@ set background=dark
 let g:colors_name = "rendered_day"
 
 " base colors
-let s:background    = "#1C1D24"
-let s:highlight_bg  = "#1E2061"
+let s:plain_bg      = "#21222B"
+let s:light_bg      = "#252630"
+let s:visual_bg     = "#2A3066"
 
-let s:plain         = "#FFFFFF"
-let s:comment       = "#4F5177"
+let s:plain         = "#F7F7F7"
+let s:comment       = "#5F6385"
 let s:keyword       = "#A4A4A4"
 
+let s:black         = "#101010"
 let s:grey          = "#BCBCBC"
-let s:yellow        = "#FFFF51"
+let s:yellow        = "#FFFF60"
 let s:orange        = "#F78E41"
 let s:magenta       = "#F85AFE"
 let s:blue          = "#5199FE"
 let s:cyan          = "#3EF1DE"
 let s:green         = "#6CFB88"
 
-exe "hi! LineNr        gui=none guifg=".s:grey. " guibg=".s:background
-
-exe "hi! Normal        gui=none guifg=".s:plain. " guibg=".s:background
+exe "hi! Normal        gui=none guifg=".s:plain. " guibg=".s:plain_bg
 
 exe "hi! Comment       gui=none guifg=".s:comment
 "       *Comment         any comment
@@ -83,7 +83,7 @@ exe "hi! Special       gui=none guifg=".s:magenta
 exe "hi! Delimiter     gui=none guifg=".s:yellow
 "        Delimiter       character that needs attention
 
-exe "hi! Todo          gui=none guifg=".s:yellow. " guibg=".s:background
+exe "hi! Todo          gui=bold guifg=".s:yellow. " guibg=".s:plain_bg
 "       *Todo            anything that needs extra attention; mostly the
 "                        keywords TODO FIXME and XXX
 
@@ -93,6 +93,16 @@ exe "hi! PreProc       gui=none guifg=".s:keyword
 "        Define          preprocessor #define
 "        Macro           same as Define
 "        PreCondit       preprocessor #if, #else, #endif, etc.
+
+exe "hi! IncSearch     gui=bold guifg=".s:plain.    " guibg=".s:blue
+exe "hi! Search        gui=bold guifg=".s:plain.    " guibg=".s:comment
+
+exe "hi! Visual        gui=none                       guibg=".s:visual_bg
+
+exe "hi! NonText       gui=none guifg=".s:plain.    " guibg=".s:light_bg
+exe "hi! LineNr        gui=none guifg=".s:comment.  " guibg=".s:plain_bg
+exe "hi! VertSplit     gui=none guifg=".s:light_bg. " guibg=".s:light_bg
+
 
 if 0
 
