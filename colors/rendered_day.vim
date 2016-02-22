@@ -25,12 +25,12 @@ let s:keyword       = "#A4A4A4"
 
 let s:black         = "#101010"
 let s:grey          = "#BCBCBC"
-let s:yellow        = "#FFFF60"
-let s:orange        = "#F78E41"
-let s:magenta       = "#F85AFE"
+let s:yellow        = "#FFFF7A"
+let s:orange        = "#FFA361"
+let s:magenta       = "#FB7DFF"
 let s:blue          = "#5199FE"
-let s:cyan          = "#3EF1DE"
-let s:green         = "#6CFB88"
+let s:cyan          = "#66FFF0"
+let s:green         = "#8CFFA3"
 
 exe "hi! Normal        gui=none guifg=".s:plain. " guibg=".s:plain_bg
 
@@ -82,6 +82,8 @@ exe "hi! Special       gui=none guifg=".s:magenta
 
 exe "hi! Delimiter     gui=none guifg=".s:yellow
 "        Delimiter       character that needs attention
+
+exe "hi! Title         gui=bold guifg=".s:orange
 
 exe "hi! Todo          gui=bold guifg=".s:yellow. " guibg=".s:plain_bg
 "       *Todo            anything that needs extra attention; mostly the
