@@ -29,6 +29,9 @@ Bundle 'fatih/vim-go'
 " Swift
 Bundle 'toyamarinyon/vim-swift'
 
+" Scala
+Bundle 'derekwyatt/vim-scala'
+
 " Lisp
 Bundle 'nickg/swank-chicken'
 Bundle 'slimv.vim'
