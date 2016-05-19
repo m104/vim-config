@@ -34,6 +34,10 @@ Now with Vundle!
 
   + vim-swift
 
+### Scala Support
+
+  + vim-scala
+
 ### Text Editing Helpers
 
   + surround
@@ -45,7 +49,8 @@ Now with Vundle!
 
 ### Color Schemes
 
-  + molokai_m104 (current)
+  + rendered_day (current)
+  + molokai_m104
   + glow
 
 
