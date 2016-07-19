@@ -34,7 +34,7 @@ Bundle 'derekwyatt/vim-scala'
 
 " Lisp
 Bundle 'nickg/swank-chicken'
-Bundle 'slimv.vim'
+Bundle 'kovisoft/slimv'
 "Bundle 'tpope/vim-fireplace'
 
 " text editing
