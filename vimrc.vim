@@ -48,11 +48,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'milkypostman/vim-togglelist'
 
 " UI
-Bundle 'bling/vim-airline'
-" load airline's tabline with gui support only
-if has("gui_running")
-  let g:airline#extensions#tabline#enabled=1
-endif
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 
 
 " * General Vim Settings
@@ -93,6 +90,14 @@ set shortmess+=r
 " first list the available options and complete the longest common part, then
 " have further <Tab>s cycle through the possibilities
 set wildmode=list:longest,full
+
+
+" * Airline configurations
+if has("gui_running")
+  let g:airline#extensions#tabline#enabled=1
+  let g:airline#extensions#wordcount#enabled=0
+  let g:airline_theme='molokai'
+endif
 
 
 " * Text Editing Display
