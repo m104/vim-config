@@ -15,6 +15,7 @@ set background=dark
 let g:colors_name = "rendered_day"
 
 " base colors
+let s:dark_bg       = "#15161E"
 let s:plain_bg      = "#21222B"
 let s:light_bg      = "#252630"
 let s:visual_bg     = "#2A3066"
@@ -26,11 +27,17 @@ let s:keyword       = "#A4A4A4"
 let s:black         = "#101010"
 let s:grey          = "#BCBCBC"
 let s:yellow        = "#FFFF7A"
+let s:yellow_bg     = "#343419"
 let s:orange        = "#FFA361"
+let s:orange_bg     = "#342114"
 let s:magenta       = "#FB7DFF"
+let s:magenta_bg    = "#321933"
 let s:blue          = "#5199FE"
+let s:blue_bg       = "#182E4C"
 let s:cyan          = "#66FFF0"
+let s:cyan_bg       = "#153431"
 let s:green         = "#8CFFA3"
+let s:green_bg      = "#1B3220"
 
 exe "hi! Normal        gui=none guifg=".s:plain. " guibg=".s:plain_bg
 
@@ -104,19 +111,18 @@ exe "hi! Visual        gui=none                       guibg=".s:visual_bg
 exe "hi! NonText       gui=none guifg=".s:plain.    " guibg=".s:light_bg
 exe "hi! LineNr        gui=none guifg=".s:comment.  " guibg=".s:plain_bg
 exe "hi! VertSplit     gui=none guifg=".s:light_bg. " guibg=".s:light_bg
+exe "hi! Directory     gui=none guifg=".s:blue
+
+exe "hi! Folded        gui=none guifg=".s:orange.   " guibg=".s:orange_bg
+exe "hi! FoldColumn    gui=none guifg=".s:orange.   " guibg=".s:orange_bg
+
+exe "hi! DiffText      gui=none guifg=".s:cyan.     " guibg=".s:black
+exe "hi! DiffChange    gui=none                       guibg=".s:blue_bg
+exe "hi! DiffAdd       gui=none guifg=".s:green.    " guibg=".s:green_bg
+exe "hi! DiffDelete    gui=none guifg=".s:magenta.  " guibg=".s:magenta_bg
+
+exe "hi! diffChanged   gui=none guifg=".s:yellow.   " guibg=".s:yellow_bg
+exe "hi! diffAdded     gui=none guifg=".s:green.    " guibg=".s:green_bg
+exe "hi! diffRemoved   gui=none guifg=".s:magenta.  " guibg=".s:magenta_bg
 
 
-if 0
-
-" TODO
-
-exe "hi! Underlined"     .s:fmt_none   .s:fg_violet .s:bg_none
-"       *Underlined      text that stands out, HTML links
-
-exe "hi! Ignore"         .s:fmt_none   .s:fg_none   .s:bg_none
-"       *Ignore          left blank, hidden  |hl-Ignore|
-
-exe "hi! Error"          .s:fmt_bold   .s:fg_red    .s:bg_none
-"       *Error           any erroneous construct
-
-endif
