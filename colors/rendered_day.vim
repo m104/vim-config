@@ -116,7 +116,7 @@ exe "hi! Directory     gui=none guifg=".s:blue
 exe "hi! Folded        gui=none guifg=".s:orange.   " guibg=".s:orange_bg
 exe "hi! FoldColumn    gui=none guifg=".s:orange.   " guibg=".s:orange_bg
 
-exe "hi! DiffText      gui=none guifg=".s:cyan.     " guibg=".s:black
+exe "hi! DiffText      gui=none guifg=".s:cyan.     " guibg=".s:cyan_bg
 exe "hi! DiffChange    gui=none                       guibg=".s:blue_bg
 exe "hi! DiffAdd       gui=none guifg=".s:green.    " guibg=".s:green_bg
 exe "hi! DiffDelete    gui=none guifg=".s:magenta.  " guibg=".s:magenta_bg
