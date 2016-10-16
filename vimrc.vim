@@ -27,7 +27,7 @@ Bundle 'JuliaLang/julia-vim'
 Bundle 'fatih/vim-go'
 
 " Swift
-Bundle 'toyamarinyon/vim-swift'
+Bundle 'keith/swift.vim'
 
 " Scala
 Bundle 'derekwyatt/vim-scala'
