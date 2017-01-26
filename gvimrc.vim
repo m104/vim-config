@@ -7,6 +7,9 @@ set guioptions-=L
 " turn off the toolbar
 set guioptions-=T
 
+" disable tooltip helpers
+set noballooneval
+
 " OS-specific configuration loading
 let s:os=substitute(system('uname -s'), '\n', '', 'g')
 let s:osfile=$HOME . '/.vim/local/os-' . s:os . '.gvim'
