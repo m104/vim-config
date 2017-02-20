@@ -173,6 +173,13 @@ map <silent> <Leader>i /\<\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\)\><C
 " search for git merge conflicts
 map <silent> <Leader>m /^[<=>]\{7\}<CR>
 
+" * Rebuild Spelling Files
+for d in glob('~/.vim/spell/*.add', 1, 1)
+  if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
+      exec 'mkspell! ' . fnameescape(d)
+  endif
+endfor
+
 " * Load Additional Settings
 
 " OS-specific configuration loading
