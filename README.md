@@ -30,6 +30,10 @@ Now with Vundle!
 
   + julia-vim
 
+### Thrift Support
+
+  + thrift
+
 ### Swift Support
 
   + vim-swift

@@ -23,6 +23,9 @@ Bundle 'tpope/vim-markdown'
 " Julia
 Bundle 'JuliaLang/julia-vim'
 
+" Thrift
+Bundle 'solarnz/thrift.vim'
+
 " Go-lang
 Bundle 'fatih/vim-go'
 
