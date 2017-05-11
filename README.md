@@ -34,6 +34,10 @@ Now with Vundle!
 
   + thrift
 
+### CQL Support
+
+  + cql-vim
+
 ### Swift Support
 
   + vim-swift

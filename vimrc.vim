@@ -26,6 +26,9 @@ Bundle 'JuliaLang/julia-vim'
 " Thrift
 Bundle 'solarnz/thrift.vim'
 
+" CQL
+Bundle 'elubow/cql-vim'
+
 " Go-lang
 Bundle 'fatih/vim-go'
 
