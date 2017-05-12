@@ -35,6 +35,9 @@ Bundle 'fatih/vim-go'
 " Swift
 Bundle 'keith/swift.vim'
 
+" Python
+Bundle 'vim-python/python-syntax'
+
 " Scala
 Bundle 'derekwyatt/vim-scala'
 
@@ -192,6 +195,9 @@ endfor
 
 " ignore some file types
 let NERDTreeIgnore = ['\.pyc$']
+
+" highlight all the pythons
+let g:python_highlight_all = 1
 
 
 " * Load Additional Settings
