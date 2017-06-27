@@ -174,7 +174,8 @@ nnoremap <silent> <C-B> :bp<CR>
 " quick plugin toggling
 map <silent> <Leader>n :NERDTreeToggle<CR>
 map <silent> <Leader>f :NERDTreeFind<CR>
-map <silent> <Leader>t :TagbarOpenAutoClose<CR>
+map <silent> <Leader>o :TagbarOpenAutoClose<CR>
+map <silent> <Leader>t :CtrlPTag<CR>
 
 " search for points of interest
 map <silent> <Leader>i /\<\(TODO\\|FIXME\\|BUG\\|DEBUG\\|XXX\\|HACK\\|NOTE\)\><CR>
