@@ -77,8 +77,8 @@ Installation in four steps:
 
 3. Install Vundle:
 
-        cd ~/.vim
-        git clone http://github.com/gmarik/vundle.git bundle/vundle
+        git submodule init
+        git submodule update
 
 4. Install the Vundle bundles:
 
