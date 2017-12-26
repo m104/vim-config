@@ -29,6 +29,9 @@ Bundle 'solarnz/thrift.vim'
 " CQL
 Bundle 'elubow/cql-vim'
 
+" GraphQL
+Bundle 'jparise/vim-graphql'
+
 " Go-lang
 Bundle 'fatih/vim-go'
 
@@ -37,6 +40,9 @@ Bundle 'keith/swift.vim'
 
 " Python
 Bundle 'vim-python/python-syntax'
+
+" Elixir
+Plugin 'elixir-lang/vim-elixir'
 
 " Scala
 Bundle 'derekwyatt/vim-scala'
