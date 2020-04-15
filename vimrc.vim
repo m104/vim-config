@@ -59,6 +59,9 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
 
+" Fish shell
+Bundle 'dag/vim-fish'
+
 " utilities
 Bundle 'milkypostman/vim-togglelist'
 
